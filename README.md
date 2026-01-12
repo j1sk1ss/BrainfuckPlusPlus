@@ -1,5 +1,6 @@
 # Brainfuck++
-There is no reason to ignore `Brainfuck` language as a phenomen. It is a bright example of a minimalistic approach in terms of interpret creation. But, why we can't to improve `Brainfuck` in the same way how `C++` has improved `C`? I mean, this language almost ideal, but to make it perfect, in my opinion, we need to add something like `functions`, `labels` and `if` statements.
+There is no reason to ignore `Brainfuck` language as a phenomen. It is a bright example of a minimalistic approach in terms of interpret creation. But, why we're not able to improve `Brainfuck` in the same way how `C++` has improved `C`? </br>
+I mean, this language almost ideal, but to make it perfect, in my opinion, we need to add something like `functions` or/and `labels`.
 
 # Why?
 This is an interesting task to implement some changes in `Brainfuck` with respect to the source syntax and the source idea of language and the interpreter.
