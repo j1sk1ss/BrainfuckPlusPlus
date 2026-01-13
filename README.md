@@ -9,6 +9,7 @@ This is an interesting task to implement some changes in `Brainfuck` with respec
 The list of new items is below:
 - `^` - jump operator.
 - `&` - call operator.
+- `$` - call return value load.
 - `!` - terminate operator.
 - `#` - argument load operator.
 - `*` - reset operator.
@@ -61,7 +62,10 @@ q
 &w     / w('B'); /
 ```
 
-Note: In comparison with the label, a function must have the `!` operator. This operator returns us to the place, where a function was invoked. 
+Note: In comparison with the label, a function must have the `!` operator. This operator returns us to the place, where a function was invoked. </br>
+Note 2: Functions have their own tape and tape position. That means, you can't use the same tape in different functions. THe one way to send values between functions and the main process is the `#` arg load operator and the `$` call return load operator. </br>
+The `$` operator works in the next way: If it called after a function call, it loads the return value into the current cell. </br>
+Note 3: The return value of a function is a value from the current cell in function at the moment before the `!` encounter. 
 
 ## Reset operator
 Reset operator merely sets the current tape value to zero.
